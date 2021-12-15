@@ -23,6 +23,6 @@ for file in ${coco_files[*]}
 do
 	if [ ! -e $file ] 
 	then
-		curl -O -s https://raw.githubusercontent.com/cocodataset/cocoapi/tree/master/PythonAPI/${file}
+		curl -O -s https://raw.githubusercontent.com/cocodataset/cocoapi/master/PythonAPI/pycocotools/${file}
 	fi
 done
