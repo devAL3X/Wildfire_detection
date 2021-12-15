@@ -9,3 +9,20 @@ do
 		curl -O -s https://raw.githubusercontent.com/pytorch/vision/main/references/detection/${file}
 	fi
 done
+
+if [ ! -e "pycocotools" ] 
+then
+    mkdir pycocotools
+fi
+
+cd pycocotools
+
+coco_files=("__init__.py" "_mask.pyx" "coco.py" "cocoeval.py" "mask.py")
+
+for file in ${coco_files[*]} 
+do
+	if [ ! -e $file ] 
+	then
+		curl -O -s https://raw.githubusercontent.com/cocodataset/cocoapi/tree/master/PythonAPI/${file}
+	fi
+done
