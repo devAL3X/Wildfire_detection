@@ -1,8 +1,11 @@
 #!/bin/bash
 
-files=("utils.py" "transforms.py" "coco_eval.py" "engine.py" "coco_utils.py")
+vision_files=("utils.py" "transforms.py" "coco_eval.py" "engine.py" "coco_utils.py")
 
-for file in ${files[*]}
+for file in ${vision_files[*]} 
 do
-	curl https://raw.githubusercontent.com/pytorch/vision/main/references/detection/${file} -s --output ${file}
+	if [ ! -e $file ] 
+	then
+		curl -O -s https://raw.githubusercontent.com/pytorch/vision/main/references/detection/${file}
+	fi
 done
