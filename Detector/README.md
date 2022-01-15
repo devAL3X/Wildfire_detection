@@ -20,3 +20,6 @@ cd cocoapi/PythonAPI
 make
 cp cp -r pycocotools/ ~/wildfire_detection/Detector
 ```
+## Pretrained model
+
+You can download serialised pretrainde model from my [drive](https://drive.google.com/drive/folders/1IrzhmyoD90DNltTF0g3Jr6fyeLT1Ox5Q?usp=sharing) because it is too large for git.
