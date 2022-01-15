@@ -9,7 +9,7 @@ Detection of smoke and fire in the image.
 
 ## Dataset
 
-[Wildfire Smoke Dataset](https://public.roboflow.com/object-detection/wildfire-smoke/1) - contains 737 images presplited on train, test and validation samples + bounding boxes (RetinaNet Keras format is used).
+[Wildfire Smoke Dataset](https://public.roboflow.com/object-detection/wildfire-smoke/1) - contains 737 images presplited on train, test and validation samples + bounding boxes (RetinaNet Keras format is used). My version of dataset could be found on my [drive](https://drive.google.com/drive/folders/12NAUwoHxRGPJNlh-X-KwkpMZR-6XvnHc?usp=sharing).
 
 Expanding dataset is planned in the future.
 
