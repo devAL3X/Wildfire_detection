@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ ! -e "lib" ] 
+then
+    mkdir lib
+fi
+
+cd lib
+
 vision_files=("utils.py" "transforms.py" "coco_eval.py" "engine.py" "coco_utils.py")
 
 for file in ${vision_files[*]} 
