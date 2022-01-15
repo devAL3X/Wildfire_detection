@@ -11,7 +11,7 @@ from header import WildfireDataset, get_transform
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 
 def get_model(num_classes):
-    # load an instance segmentation model pre-trained on COCO
+    # load an instance segmentation model
     model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=False)
 
     # get the number of input features for the classifier
