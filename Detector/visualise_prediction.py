@@ -43,12 +43,12 @@ def main(*argv) -> None:
         return 
 
     model = get_model(num_classes = 2)
-    model.load_state_dict(torch.load("models/model.pt"))
+    model.load_state_dict(torch.load("models/model.pt", map_location="cpu"))
     
     dataset_test = WildfireDataset("valid", transforms=get_transform(train=False)) 
     
     # any index from 0 to 137 (size restrictions by the size of test dataset)
-    idx = 0 if not "-i" in argv else int(argv[argv.index("-i") + 1]) 
+    idx = 0 if not "-i" in argv else int(argv[argv.index("-i") + 1]) % 137 
 
     img, _ = dataset_test[idx]
     label_boxes = np.array(dataset_test[idx][1]["boxes"])
