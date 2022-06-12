@@ -1,16 +1,18 @@
 name: wildfire_detection
 channels:
   - pytorch
+  - anaconda
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
+  - absl-py=0.15.0=pyhd3eb1b0_0
   - blas=1.0=mkl
   - bottleneck=1.3.4=py310h9102076_0
   - brotlipy=0.7.0=py310h7f8727e_1002
   - bzip2=1.0.8=h7b6447c_0
   - ca-certificates=2022.4.26=h06a4308_0
-  - certifi=2022.5.18.1=py310h06a4308_0
+  - certifi=2020.6.20=pyhd3eb1b0_3
   - cffi=1.15.0=py310hd667e15_1
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - cryptography=37.0.1=py310h9ce1e76_0
@@ -53,7 +55,7 @@ dependencies:
   - numpy=1.22.3=py310hfa59a62_0
   - numpy-base=1.22.3=py310h9585f30_0
   - openh264=2.1.1=h4ff587b_0
-  - openssl=1.1.1o=h7f8727e_0
+  - openssl=1.1.1n=h7f8727e_0
   - packaging=21.3=pyhd3eb1b0_0
   - pandas=1.4.2=py310h295c915_0
   - pillow=9.0.1=py310h22f2fdc_0
